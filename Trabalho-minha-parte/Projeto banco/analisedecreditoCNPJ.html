@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" contet="Rafael, Luiz, Isabele, Ester">
+    <title>Analise de Credito</title>
+
+</head>
+<body>
+   <fidelset><legend><h1><b>Analise de Credito CNPJ</b></h1></fidelset></legend><br>
+    <hr>
+    <p>Preencha os dados e aguarde o retorno.</p><br>
+        <hr>
+    
+<form name="analisedecreditocnpj" method="post" onsubmit="return analisedecreditocnpj();" action="#">
+    <!--Razao social da empresa-->
+    <label for="razaosocial">Razão social:</label>
+    &nbsp; <input type="text" id="razaosocial" name="razaosocial" style="width:400px" autocomplete="off">
+    <br>
+    <br>
+<!--CNPJ da empresa-->
+<label for="cnpj">CNPJ:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cnpj" name="cnpj" placeholder="__.___.___-__" autocomplete="off" data-mask="cnpj" oninput="mascara(this)"> 
+(Insira somente nuneros)
+<br>
+<br>
+<!--Endereço da empresa-->
+<label for="endereco">Endereço:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="endereco" name="endereco" autocomplete="off"> 
+<label for="numero">N°</label>
+<input type="text" id="numero" name="numero" style="width:100px">
+<br>
+<br>
+<!--CEP da empresa -->
+<label for="cep">CEP:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cep" name="cep" placeholder="_____-___" autocomplete="off" data-mask="cep" oniput="mascara(this)">
+(Insira somente nuneros)
+<br>
+<br>
+<!--Cidade da empresa-->
+<label for="cidade">Cidade:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cidade" name="cidade" autocomplete="off">
+<br>
+<br>
+<!--Estado da empresa-->
+<label for="estado">Estado:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="estado" id="estado">
+<option value="">SELECIONE O ESTADO</option>
+<option value="ac">Acre</option>
+<option value="al">Alagoas</option>
+<option value="ap">Amapá</option>
+<option value="am">Amazonas</option>
+<option value="ba">Bahia</option>
+<option value="ce">Ceará</option>
+<option value="df">Distrito Federal</option>
+<option value="es">Espírito Santo</option>
+<option value="go">Goiás</option>
+<option value="ma">Maranhão</option>
+<option value="ms">Mato Grosso do Sul</option>
+<option value="mt">Mato Grosso</option>
+<option value="mg">Minas Gerais</option>
+<option value="pa">Pará</option>
+<option value="pb">Paraíba</option>
+<option value="pr">Paraná</option>
+<option value="pe">Pernambuco</option>
+<option value="pi">Piauí</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="rn">Rio Grande do Norte</option>
+<option value="rs">Rio Grande do Sul</option>
+<option value="ro">Rondônia</option>
+<option value="rr">Roraima</option>
+<option value="sc">Santa Catarina</option>
+<option value="ac">Acre</option>                
+<option value="sp">São Paulo</option>
+<option value="se">Sergipe</option>
+<option value="to">Tocantins</option>
+</select>
+<br>
+<br>
+<!--Telefone para contato-->
+<label for="telefone">Telefone:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="telefone" name="telefone" placeholder="(__)_____-____" autocomplete="off" data-mask="telefone" oniput="mascara(this)">
+(Insira somente nuneros)
+<br>
+<br>
+<!--E-mail para contato-->
+<label for="e-mail">E-mail:</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="e-mail" name="e-mail" autocomplete="off">
+<br>
+<br>
+<!--Data de abertura da empresa-->
+<label for="data">Data de abertura:</label>
+<input type="data" id="data" name="data" placeholder="__/__/____" data-mask="data" oninput="mascara(this)"   >
+<br>
+<br>
+<!--Anexo de arquivos necessarios-->
+<label for="pdffile">Anexar documentos:</label>
+<input type="file" id="pdffile" name="pdffile" required><br>
+(Anexe a declaração anual do MEI referente ao ano anterior)<br>
+(Anexe o comprovante de pagamento das guias mensais ou CND Federal.) <br>
+<br>
+<br>
+<br>
+<!--Ação enviar e sair-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button><a href="INDEX.HTML">RETORNAR </a> </button>
+<input type="submit" value="enviar" name="enviar">
+<input type="reset" value="limpar" name="limpar">
+<hr>
+
+</form>
+
+<!-- login.html -->
+<form action="/login" method="POST">
+    <input type="text" name="login" placeholder="Usuário">
+    <input type="password" name="password" placeholder="Senha">
+    <button type="submit">Entrar</button>
+  </form>
+  <!-- index.html -->
+  <h1>Você está logado!</h1>
+  <a href="INDEX.HTML">Sair</a>
+    
+</body>
+</html>

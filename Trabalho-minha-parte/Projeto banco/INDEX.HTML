@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" contet="Rafael, Luiz, Isabele, Ester">
+    <title>BANCO</title>
+</head>
+<body>
+<h1>BANCO LEIR</h1>
+<H2>EMPRESTIMO FACILITADO</H2>
+<p>Telefone: (31) 2557-8636</p>
+<p>E-mail: bancoleir@gmail.com</p>
+<!-- COLOCAR IMAGEM-->
+ <br>
+ <br>
+ <nav>
+  <ul class="menu">
+    <li>
+        <a href="#">Analise de Credito</a>
+        <ul class="submenu">
+            <li><a href="analisedecreditoCNPJ.html">Enviar analise CNPJ</a></li> <!-- REFERENCIAR PAGINA 'FAÇA ANALISE DE CREDITO'-->
+            <li><a href="analisedecreditocpf.html">Enviar analise CPF</a></li> <!-- REFERENCIAR PAGINA  ''  -->
+            <li><a href=""></a></li> <!-- REFERENCIAR PAGINA  ''  -->
+            <li><a href=""></a></li> <!-- REFERENCIAR PAGINA  ''  -->
+        </ul>
+    </li>
+    <li><a href="#">Fale Conosco </a>
+        <ul class="submenu">
+            <li><a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">Acessar o Whatsapp</a></li>  
+        
+        </ul>
+    </li>
+</ul>
+ </nav>
+ <br>
+ <img id="banner" src="" alt="imagem chamativa">  <!--Adiciona imagem chamativa -->
+ <br>
+ <img id="banner2" src="" alt="imagem chamativa">  <!--Adiciona imagem chamativa -->
+<br>
+<br>
+<fieldset><legend><b>Quem somos</b></legend>
+<br>
+<p id="bem vindo"><b><em>Bem vindo(a)</em></b><br>
+    'Nos do banco LEIR oferecemos as melhores condições de credito facilitado para microempreendedores <br>
+    'Temos uma rapida analise de credito, sem burocracia e sem complicação, <b>O processo e rapido e seguro</b><br>
+    'Somos referencia no mercado a mais de 10anos ajudando microempreendedores a alcançar seus objetivos visando sempre o crecimento'<br>
+    'Nosso atendimento e personalizado e entendemos as necessidades dos nossos clientes, nao estamos aqui somente para lhe oferecer credito<br>
+    'mas tambem somos parceiros do sucesso do seu negocio. &nbsp; &nbsp; &nbsp; &nbsp; <b><em>Vamos crescer juntos!</em></b><br>
+    
+    <!-- podemos adicionar um link em '' faça analise de credito, que ira levar ate a pagina da analise-->
+
+    <hr> 
+    
+    <p id="documentos"><b>Quais documentos são necessários para solicitar o empréstimo?</b></p>
+    Se você optar pelo empréstimo pessoal deve preencher o formulario com os dados solicitados, e anexar os documentos:
+    IDENTIDADE,CPF,COMPROVANTE DE ENDEREÇO E COMRPOVANTE DE RENDA<BR>
+        Se você optar pelo emprestimo juridico deve preencher o formulario com os dados solicitados, e annexar os documentos:
+        CARTAO CNPJ, DECLARAÇÃO ANUAL DO ANO ANTERIOR,CND FEDERAL
+
+
+    <hr>
+
+        <p id="prazo"><b>Qual o prazo para receber meu dinheiro?</b></p>
+        A partir do momento que você é aprovado, o prazo médio para o dinheiro ser depositado na conta cadastrada é de no máximo, 3 dias úteis.
+    
+
+</fieldset>
+
+<form name="analisedecreditocnpj" onsubmit="return testa_form('analisedecreditocnpj');" action="#">
+    <!-- campos do formulário -->
+</form>
+
+<input type="text" name="cpf" data-mask="cpf" oninput="mascara(this)">
+<input type="text" name="cnpj" data-mask="cnpj" oninput="mascara(this)">
+<input type="text" name="cep" data-mask="cep" oninput="mascara(this)">
+<input type="text" name="telefone" data-mask="telefone" oninput="mascara(this)">
+<input type="text" name="data" data-mask="data" oninput="mascara(this)">
+
+</body>
+
+
+</html>
