@@ -149,6 +149,17 @@ function mascara(input) {
     input.setAttribute("maxlength", "10");
     if (v.length === 2 || v.length === 5) input.value += "/";
   }
+function validaPDFFile(input) {
+  var filePath = input.value;
+  // Expressão regular para verificar se o arquivo possui a extensão .pdf
+  var allowedExtension = /(\.pdf)$/i;
+  if (!allowedExtension.exec(filePath)) {
+    alert('Por favor, envie um arquivo PDF.');
+    input.value = ''; // Limpa o campo caso o arquivo não seja PDF
+    return false;
+  }
+  return true;
+}
  // index.js
 
 // Importações
